@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <h1 id="title"> Survey Form </h1>
+  <p id="description"> This is a Survey form by Salma Jahan</p>
+  <form id="survey-form" />
+  <label for="name" id="name-label">Name</label>
+  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required /><br>
+  <label for="name" id="email-label">Email</label>
+  <input type="email" class="form-control" id="email" email="email" placeholder="Email" required /><br>
+  <label for="number" id="number-label">Number</label>
+  <input type="number" class="form-control" id="number" number="number" min="4" max="120" placeholder="number"
+    required /><br>
+  <label for="gender">Choose your gender:</label>
+
+  <select name="gender" id="dropdown">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="others">Others</option>
+  </select>
+
+  <h4>Are You Working? </h4>
+  <input type="radio" name="group1" value="yes" /> YES
+  <input type="radio" name="group1" value="no" /> NO
+  <input type="radio" name="group1" value="not yet" /> Will Start
+
+  <h4>Choose Your Field of Study </h4>
+  <input type="checkbox" name="group2" value="science" />Science
+  <input type="checkbox" name="group2" value="business" />Business
+  <input type="checkbox" name="group2" value="arts" />Arts
+  <input type="checkbox" name="group2" value="social" />Social Studies<br>
+
+  <label for="desc">Tell us about you(max 400 words):</label>
+
+  <textarea id="yourself" name="yourself" rows="20" cols="50">
+</textarea>
+
+  <input id="submit" type="submit">
+
+
+  </form>
+
+</body>
+
+</html>
