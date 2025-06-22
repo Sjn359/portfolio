@@ -1,7 +1,5 @@
-"use client";
-
 import { useState } from "react";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -14,19 +12,19 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="text-xl font-bold text-pink-500">
+        {/* <Link href="/" className="text-xl font-bold text-pink-500">
           SJ
-        </Link>
+        </Link> */}
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <Link
+          {/* <Link
             href="#about"
             className="text-sm font-medium text-gray-700 hover:text-pink-500 transition-colors"
           >
             About
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             href="#skills"
             className="text-sm font-medium text-gray-700 hover:text-pink-500 transition-colors"
           >
@@ -43,7 +41,7 @@ export default function Navbar() {
             className="text-sm font-medium text-gray-700 hover:text-pink-500 transition-colors"
           >
             Contact
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Mobile Menu Button */}

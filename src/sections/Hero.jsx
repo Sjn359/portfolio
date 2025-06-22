@@ -1,13 +1,19 @@
-import React from "react";
-import { Button } from "../components/ui/button";
+import Button from "../components/ui/button";
 
 export default function Hero() {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="py-20 md:py-28 lg:py-32 container mx-auto px-4 md:px-6">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-        <div className="w-32 h-32 md:w-40 md:h-40 overflow-hidden rounded-full border-4 border-pink-100 shadow-lg">
+        <div className="w-32 h-32 md:w-40 md:h-40 relative overflow-hidden rounded-full border-4 border-pink-100 shadow-lg">
           <img
-            src="src/assets/img.jpg"
+            src="/professional-portrait.png"
             alt="Salma Jahan"
             className="w-full h-full object-cover"
           />
@@ -26,14 +32,18 @@ export default function Hero() {
             🌱
           </p>
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-            <Button className="bg-pink-500 hover:bg-pink-600 text-white">
-              <a href="#projects">Check Out My Work</a>
+            <Button
+              onClick={() => scrollToSection("projects")}
+              className="bg-pink-500 hover:bg-pink-600 text-white"
+            >
+              Check Out My Work
             </Button>
             <Button
+              onClick={() => scrollToSection("contact")}
               variant="outline"
               className="border-pink-500 text-pink-500 hover:bg-pink-50"
             >
-              <a href="#contact">Let's Chat!</a>
+              Let's Chat!
             </Button>
           </div>
         </div>

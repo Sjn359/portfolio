@@ -1,23 +1,24 @@
-import Hero from "src/sections/Hero";
-import About from "src/sections/about";
-import Skills from "src/sections/skills";
-import Projects from "src/sections/projects";
-import Contact from "src/sections/contact";
-import Footer from "src/sections/footer";
-import Navbar from "src/sections/navbar";
+import React from "react";
+// import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
+// import Footer from "./sections/Footer";
+// import Navbar from "./sections/Navbar";
 
-export default function Home() {
+export default function App() {
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
-        <Hero />
+        {/* <Hero /> */}
         <About />
         <Skills />
         <Projects />
         <Contact />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
